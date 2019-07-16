@@ -11,17 +11,9 @@
 </head>
 
 <body>
-	<script>
-		function myfanctaion()
-	var adadaval=document.getElementById("txt1") .value;
-		var adadovom=document.getElementById("txt2").value;
-		var hasel=adadaval+adadovom;
-		document.getElementById("demo").innerHTML=adadaval+adadovom;
-		
-	</script>
 	<p>
 	bezan rosh
-		<button onClick="myfunctaion()"></button>
+		<button onClick="runCalculator()"></button>
 	</p>
 	<p>adad aval ro bezan:
 	<input type="number" id="txt1" name="text1" >
@@ -31,5 +23,18 @@
 		
 	</p>
 	<p id="demo"></p>
+	
+	<script>
+	function runCalculator(){
+		debugger;
+	var adadaval=parseInt(document.getElementById("txt1").value);
+	var adadovom=parseInt(document.getElementById("txt2").value);
+	var hasel=adadaval+adadovom;
+	document.getElementById("demo").innerHTML=hasel;
+		window.alert(hasel);
+	}
+	
+	</script>
+	
 </body>
 </html>
